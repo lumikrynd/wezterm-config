@@ -11,4 +11,17 @@ pcall(function()
 	localSettings.modify_config(config)
 end);
 
+config.skip_close_confirmation_for_processes_named = {
+  'bash',
+  'sh',
+  'zsh',
+  'fish',
+  'tmux',
+  'nu',
+  'bash.exe',
+  'cmd.exe',
+  'pwsh.exe',
+  'powershell.exe',
+}
+
 return config
